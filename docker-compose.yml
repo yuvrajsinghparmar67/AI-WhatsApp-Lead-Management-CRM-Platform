@@ -1,0 +1,60 @@
+# Full local stack: database + backend + frontend, all in Docker.
+#
+# For day-to-day development, running backend/frontend natively with
+# hot-reload (see README > Installation) is faster - use this compose
+# file as-is when you want the whole app running in containers, e.g. to
+# sanity-check the production Docker images before deploying, or to hand
+# someone a single `docker compose up` to try the whole product.
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: crm_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: crm_user
+      POSTGRES_PASSWORD: crm_password
+      POSTGRES_DB: crm_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - crm_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U crm_user -d crm_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+    container_name: crm_backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      # Overrides .env's DATABASE_URL so the backend reaches Postgres by
+      # its service name ("db") instead of localhost, since both now run
+      # inside the same Docker network.
+      DATABASE_URL: postgresql+psycopg2://crm_user:crm_password@db:5432/crm_db
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000/api/v1
+    container_name: crm_frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  crm_postgres_data:
