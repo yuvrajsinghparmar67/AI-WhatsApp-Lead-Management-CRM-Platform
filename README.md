@@ -116,7 +116,7 @@ Analytics → Dashboard
 | Messaging Layer | `messaging/` — `MessagingProvider` / `SimulatedWhatsAppProvider` | ✅ |
 | Lead Management | `services/contact_service.py`, `conversation_service.py` | ✅ |
 | Knowledge Retrieval | `ai/retrieval/` — searches past conversations *and* the knowledge base/company profile | ✅ |
-| **Business Rules** | `services/business_rule_service.py` + `models/business_rule.py` | ✅ Milestone 12 — two kinds: guardrails (mandatory constraints injected into every suggested reply) and automation rules (deterministic overrides applied after AI analysis, admin's rule always wins) |
+| **Business Rules** | `services/business_rule_service.py` + `models/business_rule.py` | guardrails (mandatory constraints injected into every suggested reply) and automation rules (deterministic overrides applied after AI analysis, admin's rule always wins) |
 | Gemini 3.5 Flash | `ai/providers/gemini_provider.py` | ✅ |
 | Reply Generation | `services/ai_pipeline_service.py` | ✅ |
 | CRM Update | writes to `Contact` / `Conversation` | ✅ |
