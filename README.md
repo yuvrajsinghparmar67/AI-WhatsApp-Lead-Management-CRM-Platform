@@ -1,9 +1,4 @@
-# AI WhatsApp Lead Management & CRM Platform
-
-An AI-native CRM that reads incoming customer conversations and automatically
-detects intent, qualifies leads, summarizes threads, scores sentiment, and
-suggests replies — so a business doesn't have to triage hundreds of WhatsApp
-messages by hand.
+# AI WhatsApp Lead Management & CRM
 
 
 ---
@@ -23,77 +18,77 @@ configured — not something the model invented.
 <table>
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(244).png" width="420"><br>
+      <img src="Screenshot%20(244).png" width="420"><br>
       <b>Sign Up Page</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(245).png" width="420"><br>
+      <img src="Screenshot%20(245).png" width="420"><br>
       <b>Admin Inbox page</b>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(246).png" width="420"><br>
+      <img src="Screenshot%20(246).png" width="420"><br>
       <b>Lead Pipeline</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(247).png" width="420"><br>
+      <img src="Screenshot%20(247).png" width="420"><br>
       <b>Analytics 1</b>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(248).png" width="420"><br>
+      <img src="Screenshot%20(248).png" width="420"><br>
       <b>Analytics 2</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(249).png" width="420"><br>
+      <img src="Screenshot%20(249).png" width="420"><br>
       <b>Business Info 1</b>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(250).png" width="420"><br>
+      <img src="Screenshot%20(250).png" width="420"><br>
       <b>Business Info 2</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(251).png" width="420"><br>
+      <img src="Screenshot%20(251).png" width="420"><br>
       <b>Adding Product or Service</b>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(252).png" width="420"><br>
+      <img src="Screenshot%20(252).png" width="420"><br>
       <b>Knowledge Base and Documents</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(253).png" width="420"><br>
+      <img src="Screenshot%20(253).png" width="420"><br>
       <b>Team Members and Roles Page</b>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(254).png" width="420"><br>
+      <img src="Screenshot%20(254).png" width="420"><br>
       <b>FAQ Page</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(255).png" width="420"><br>
+      <img src="Screenshot%20(255).png" width="420"><br>
       <b>Business Rules</b>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="screenshots/Screenshot%20(256).png" width="420"><br>
+      <img src="Screenshot%20(256).png" width="420"><br>
       <b>AI Settings</b>
     </td>
     <td align="center">
-      <img src="screenshots/Screenshot%20(257).png" width="420"><br>
+      <img src="Screenshot%20(257).png" width="420"><br>
       <b>Follow Up Rules</b>
     </td>
   </tr>
